@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习canvas</title>
+</head>
+
+<body>
+    <!-- 1.創建canvas對象 -->
+    <canvas id="c" width="300" height=" 300" style="border: 1px solid #ccc;"></canvas>
+</body>
+<script>
+    const cnv = document.getElementById('c')
+    const cxt = cnv.getContext('2d')
+    // 3.绘制矩形
+    // strokeStyle 属性
+    // strokeRect(x, y, width, height) 方法
+    // cxt.strokeStyle = 'pink'
+    // cxt.strokeRect(50, 50, 200, 100)
+   // 4.填充矩形
+    // fillStyle 属性
+  // fillRect(x, y, width, height) 方法
+  cxt.fillStyle = 'pink'
+  cxt.fillRect(50, 50, 200, 100) // fillRect(x, y, width, height)
+
+</script>
+<!-- <script>
+    const cnv = document.getElementById('c')
+    const cxt = cnv.getContext('2d')
+    // 1. 绘制一条线段
+    cxt.moveTo(100, 100) // 第一个坐标点
+    cxt.lineTo(280, 180) // 第二个坐标点
+    
+    // 2。可以改变线的宽度和颜色
+    cxt.lineWidth = 20
+    cxt.strokeStyle = 'pink'
+    // 修改直线两端样式
+    cxt.lineCap = 'round' // 默认: butt; 圆形: round; 方形: square
+    cxt.stroke() // 连接
+
+    // 3.绘制矩形
+</script> -->
+
+</html>
